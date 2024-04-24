@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+
+$code-color: #cc0000;
+$code-block-bg: #ded9ca;
+$code-block-border-color: #000000;
+$code-block-font-size: 0.75em;
+$presentation-block-margin: 0px;
+
+// fonts
+$presentation-heading-color: #00AAB4 !default;
+$presentation-heading-line-height: 2.0;
+$presentation-title-slide-text-align: left;
+$presentation-font-size-root: 32px;
+$body-color: #000000 !default;
+
+$link-color: #2a76dd;
+$link-color-hover: lighten($link-color, 15%);
+
+/*-- scss:rules --*/
+
+.quote-cite {
+  text-align: right;
+}
+
+.small-text {
+  font-size: 0.75em;
+}

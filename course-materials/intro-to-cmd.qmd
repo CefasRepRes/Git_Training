@@ -1,0 +1,272 @@
+---
+# Document details
+title: "Introduction to command line"
+date: today
+date-format: full
+author: "Stephen D. Gregory$^{1,2,*}$ et al."
+authors: 
+  - name: Stephen D. Gregory$^{1,2,*}$
+    orcid: 0000-0002-8230-0191
+  - name: _et al_.
+email: "[stephen.gregory@cefas.gov.uk](mailto:stephen.gregory@cefas.gov.uk)"
+abstract: |
+
+  $^{1}$ The Centre for Environment, Fisheries and Aquaculture Science, Barrack Road, Weymouth, Dorset DT4 8UB, UK
+
+  $^{2}$ Department of Life and Environmental Sciences, Faculty of Science and Technology, Bournemouth University, Poole BH12 5BB, UK
+
+  \* Corresponding author: tel: +44 1929 330 437; email: {{< meta email >}}
+abstract-title: Affiliations
+  
+# Output details
+format: 
+    revealjs:
+        self-contained: true
+        theme: custom.scss
+        incremental: false
+
+# other quarto options
+from: markdown+emoji
+
+# References
+# csl: ecology.csl # more at www.zotero.org/styles
+# bibliography: references.bib
+# link-citations: true
+---
+
+## Command line is easy!
+
+<style>
+.reveal section p {
+    display: inline-block;
+    font-size: 0.75em;
+    line-height: 1.2em;
+}
+</style>
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Windows 10
+
+- Open Git bash
+
+![](../images/intro-to-cmd-img-1-1.jpg)
+
+:::
+::: {.column width="50%"}
+
+### MacOS
+
+- Open Terminal in Utilities
+
+![](../images/intro-to-cmd-img-1-2.png)
+
+:::
+::::
+
+## Where am I?
+
+. . .
+
+:::: {.columns}
+::: {.column width="60%"}
+
+- `pwd` = present working directory
+  + bash shell paths use forward slash as separator
+
+> In Windows:
+> 
+> `C:\Users\tams00`
+> 
+> becomes
+> 
+> `/c/Users/tams00`
+
+- Symbol `~` means home directory
+
+> `~` is the same as
+>
+> `/c/Users/tams00`
+
+:::
+::: {.column width="40%"}
+
+#### Notes:
+
+- Windows in not case sensitive
+
+- MacOS and Linux are case sensitive
+
+> `cd documents` 
+> 
+> won’t work
+
+:::
+::::
+
+## Moving about
+
+. . .
+
+:::: {.columns}
+::: {.column width="60%"}
+
+- `ls` = List files in directory
+
+  + `ls -l` gives long listing format
+
+
+> directories/
+> 
+> files
+
+- `cd` = change directory
+
+> `cd Documents`
+> 
+> NB. tab key autocompletes file and directory names, e.g.: `cd Doc`\<press tab\>
+
+- Shortcuts:
+
+  + `cd ..` = move up one directory
+  + `cd ~` = move to home directory
+  + `cd -` = move to previous directory
+
+:::
+::: {.column width="40%"}
+
+#### Notes:
+
+- Check output against file browser. You are looking at the same files.
+
+- In Windows you can start a Git bash shell in any location by right clicking on a directory
+
+![](../images/intro-to-cmd-img-3-1.png)
+
+:::
+::::
+
+## Creating and removing files and directories
+
+. . .
+
+:::: {.columns}
+::: {.column width="60%"}
+
+- `mkdir` = make directory
+
+> `mkdir rubbish`
+
+- `rmdir` = remove directory
+
+> `rmdir rubbish`
+
+- `rm` = remove file
+
+> `rm rubbish.txt`
+
+:::
+::: {.column width="40%"}
+
+#### Notes:
+
+- Can still use the file browser
+ 
+- Create and modify text files using any editor, e.g.
+
+  + Notepad++ in Windows
+
+  + TextEdit in MacOS
+
+:::
+::::
+
+## Copy or move files
+
+. . . 
+
+:::: {.columns}
+::: {.column width="60%"}
+
+- `mv` = move file/directory
+
+> `mv file.txt` <new location>
+> 
+> NB. Can be used to rename e.g. `mv oldname.txt newname.txt`
+
+- `cp` = copy file
+
+> `cp file.txt file_v2.txt`
+
+- `cp -r` = copy directory AND contents
+
+> `cp -r Documents Documents_v2`
+
+:::
+::: {.column width="40%"}
+
+#### Notes:
+
+- Alternatively use the file browser
+
+- NB. Avoid using spaces in filenames on command line. (It won’t understand them)
+
+:::
+::::
+
+## Tips to make life easier...
+
+. . .
+
+- Tab key = auto-complete (avoid typing long path names)
+
+- Copy & paste
+
+  + Select text using mouse = automatically copies highlighted text
+   
+  + Right or central click to paste.
+   
+  + NB. Ctl+c/Ctl+v won’t work on command line: Ctl+c means cancel/abort
+   
+- `less` = view file contents without editing
+
+> `less file.txt`
+
+- Scroll using arrows, type `q` to quit/exit
+
+## Test your installation from terminal
+
+. . .
+
+:::: {.columns}
+::: {.column width="40%"}
+
+```
+git --version
+git version 2.22.0.windows.1
+```
+
+:::
+::: {.column width="60%"}
+
+#### How to configure an editor for git messages
+
+[https://github.com/CefasRepRes/Git_Training/wiki/Before-the-course](https://github.com/CefasRepRes/Git_Training/wiki/Before-the-course)
+
+- Check default editor
+
+> `git config -- core.editor`
+
+- Simplest choice for Windows
+
+> `git config --global core.editor "notepad"`
+
+- Help for other editors
+
+[https://help.github.com/en/articles/associating-text-editors-with-git](https://help.github.com/en/articles/associating-text-editors-with-git)
+
+:::
+::::
