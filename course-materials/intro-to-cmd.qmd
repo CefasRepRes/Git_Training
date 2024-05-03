@@ -20,10 +20,13 @@ abstract-title: Affiliations
   
 # Output details
 format: 
-    revealjs:
-        self-contained: true
-        theme: custom.scss
-        incremental: false
+  beamer:
+    aspectratio: 169
+    incremental: false
+  revealjs:
+    self-contained: true
+    theme: custom.scss
+    incremental: false
 
 # other quarto options
 from: markdown+emoji
