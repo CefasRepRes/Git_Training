@@ -25,3 +25,11 @@ $link-color-hover: lighten($link-color, 15%);
 .small-text {
   font-size: 0.75em;
 }
+
+/*-- make block text smaller, but breaks 1st bullet point text size 
+.reveal section p {
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1.2em;
+}
+--*/

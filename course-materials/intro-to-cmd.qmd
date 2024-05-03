@@ -1,31 +1,24 @@
 ---
 # Document details
 title: "Introduction to command line"
+subtitle: ""
 date: today
 date-format: full
-author: "Stephen D. Gregory$^{1,2,*}$ et al."
+author: "Jennifer Graham, Tiago Silva & David Ryder"
 authors: 
-  - name: Stephen D. Gregory$^{1,2,*}$
-    orcid: 0000-0002-8230-0191
-  - name: _et al_.
-email: "[stephen.gregory@cefas.gov.uk](mailto:stephen.gregory@cefas.gov.uk)"
-abstract: |
-
-  $^{1}$ The Centre for Environment, Fisheries and Aquaculture Science, Barrack Road, Weymouth, Dorset DT4 8UB, UK
-
-  $^{2}$ Department of Life and Environmental Sciences, Faculty of Science and Technology, Bournemouth University, Poole BH12 5BB, UK
-
-  \* Corresponding author: tel: +44 1929 330 437; email: {{< meta email >}}
-abstract-title: Affiliations
+  - name: David Ryder
+  - name: Tiago Silva
+  - name: Jennifer Graham
+email: "[jennifer.graham@cefas.gov.uk](mailto:jennifer.graham@cefas.gov.uk)"
   
 # Output details
 format: 
-  beamer:
-    aspectratio: 169
-    incremental: false
   revealjs:
     self-contained: true
     theme: custom.scss
+    incremental: false
+  beamer:
+    aspectratio: 169
     incremental: false
 
 # other quarto options
@@ -38,14 +31,6 @@ from: markdown+emoji
 ---
 
 ## Command line is easy!
-
-<style>
-.reveal section p {
-    display: inline-block;
-    font-size: 0.75em;
-    line-height: 1.2em;
-}
-</style>
 
 . . .
 
