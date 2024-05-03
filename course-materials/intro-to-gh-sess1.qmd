@@ -1,0 +1,203 @@
+---
+# Document details
+title: "Introduction to Git & GitHub"
+subtitle: "Session 1"
+date: today
+date-format: full
+author: "Jennifer Graham, Tiago Silva & David Ryder"
+authors: 
+  - name: Jennifer Graham
+  - name: Tiago Silva
+  - name: David Ryder
+email: "[jennifer.graham@cefas.gov.uk](mailto:jennifer.graham@cefas.gov.uk)"
+  
+# Output details
+format: 
+  revealjs:
+    self-contained: true
+    theme: custom.scss
+    incremental: false
+  beamer:
+    aspectratio: 169
+    incremental: false
+
+# title slide
+title-slide-attributes: 
+  data-background-image: ../images/logo.png
+  data-background-size: 40%
+  data-background-position: 50% 5%
+
+# other quarto options
+from: markdown+emoji
+
+# References
+# csl: ecology.csl # more at www.zotero.org/styles
+# bibliography: references.bib
+# link-citations: true
+---
+
+## Welcome!
+
+. . .
+
+Some initial course info: ​
+
+* You can find links to our draft schedule and all our course materials through our wiki.​
+
+    * https://github.com/CefasRepRes/Git_Training/wiki/Schedule​
+
+    * We will take breaks during the day!
+
+* Feel free to interrupt and ask questions as we go.  ​
+
+* H&S… ​
+
+
+## Why use version control?
+
+. . .
+
+* How many people have directories that include files like this? 
+
+    * `File_16062020.doc`, `File_30062020.doc`, ...
+    * `File_old.doc`, `File_new.doc`
+    * `File.doc.orig`
+    * `File.doc`, `File_test.doc`
+
+![](../images/intro-to-gh-sess1-3-1.png){.absolute bottom="10" right="10" width="300"}
+
+. . .
+
+* Version control allows you to: 
+
+    * Back up your code.
+
+    * Keep track of changes. 
+
+    * Share your code with others. 
+
+    * Develop code with collaborators. 
+
+
+## Changes are documented
+
+. . .
+
+* As code is backed up, can be confident in testing new ideas. 
+
+* Version control software ensures that changes are attributable to individuals. 
+
+    * If the code breaks, you know why!
+
+* Code can be shared along with the documentation and file history.
+
+    * Documentation can explain how and why the code should be used.
+
+    * Can create fixed versions/releases, along with [DOIs](https://guides.github.com/activities/citable-code/).
+
+        * Sharing now often required for publication. 
+ 
+* All the above provides “quality assurance” in the final product. 
+
+
+## Version control software
+
+. . .
+
+* Many options out there...
+
+    * [https://en.wikipedia.org/wiki/List_of_version-control_software](https://en.wikipedia.org/wiki/List_of_version-control_software)
+    
+    * All are agnostic in terms of the programming language
+
+* Client-server model :: all users share a single code repository.  
+
+    * e.g., SVN (subversion) 
+
+        * Legacy choice, depending on when project started (many now switching)?
+
+* Distributed model :: all users have their own local repositories. Changes can be shared/merged as a separate step. 
+
+    * e.g., Git
+
+        * What we’re using today! 
+
+        * Well supported, large user community, e.g.,
+
+
+## 
+
+> "No other technology is as widely used as Git."
+
+::: small-text
+From Stack Overflow user survey (2022)
+:::
+
+![](../images/intro-to-gh-sess1-5-1.png){.absolute bottom="250" right="250" width="500"}
+
+
+## Central vs Distributed workflow?
+
+. . .
+
+:::: {.columns}
+::: {.column width="50%"}
+
+</br>
+
+![Centralised/client-server model (e.g., SVN)](../images/intro-to-gh-sess1-6-1.png)
+
+:::
+::: {.column width="50%"}
+
+</br>
+
+![Distributed model (e.g., Git) :clap:](../images/intro-to-gh-sess1-6-2.png)
+
+:::
+::::
+
+
+## So, what are Git & GitHub? 
+
+. . .
+
+:::: {.columns}
+::: {.column width="75%"}
+
+</br>
+
+NB. These are two different things 
+
+</br>
+
+* Git = version control software.
+
+* GitHub = web-based repository hosting service*. 
+
+i.e. Git is the software behind the GitHub web service.
+
+</br>
+
+You can use Git without GitHub. However, GitHub provides useful tools (especially for sharing your code).  
+
+:::
+::: {.column width="25%"}
+
+![](../images/intro-to-gh-sess1-7-1.png)
+
+![](../images/intro-to-gh-sess1-7-2.png)
+
+</br>
+
+::: small-text
+\* Other providers exist, but GitHub is the most popular, e.g.:
+:::
+
+</br>
+
+![](../images/intro-to-gh-sess1-7-3.png)
+
+:::
+::::
+
